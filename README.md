@@ -1,2 +1,2 @@
 # project
-tribute to margaret hamilton
+Tribute to Margaret Hamilton
