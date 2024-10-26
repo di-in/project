@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      
+    <title>
+        Margaret Hamilton
+    </title>
+    <style>
+         
+        body{
+            margin:0;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #1c1c1c;
+            color: #f0f0f0;
+            padding-bottom: 90px;
+        }
+        .header1{
+        font-size: 15px;
+        }
+        .timeline{
+            position: relative;
+            margin-left: 40px;
+            padding: 20px;
+        }
+       .timeline::before{
+        content: "";
+        position: absolute;
+        left: 10px;
+        width: 2px;
+        height: 100%;
+        background-color: #502a2a;
+       }
+       .item{
+        position: relative;
+        margin-bottom: 30px;
+        text-align: left;
+        color: #885353;
+        font-size: 19px;
+       }
+       .item::before{
+        content: "";
+        position: absolute;
+        left: -30px;
+        top: 50%;
+        width: 30px;
+        height: 2px;
+        background-color: #4b2c2c;
+       }        
+       footer{
+        background-color: #271b1b;
+        color: wheat;
+        text-align: center;
+        padding: 1px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+       }
+      footer a{
+        color: white;
+        margin: 0 10px;
+        text-decoration: none;
+        font-size: 24px;
+      }
+      footer a:hover{
+        color: #1da1f2;
+      }
+    </style>
+</head>
+<body>
+  
+    <img src="data:image/jpeg;base64,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"
+      width="300px">
+    <h1 class="header">Margaret Hamilton: The Woman Who Took Humanity to the Moon</h1>
+    <h class="header1">A trailblazer in software engineering, Margaret Hamilton's work ensured a safe moon landing and defined modern software development.</h>
+
+   <div class="timeline">
+<h2 class="item">Childhood and Early Life</h2>
+<p>
+    Margaret Hamilton was born on August 17, 1936, in Paoli, Indiana, to Kenneth Heafield and Ruth Esther Partington. Here's a glimpse into her early years:</p>
+
+   <p> Curiosity and Love for Learning: From a young age, Margaret was deeply interested in math, science, and logic puzzles. She showed a natural curiosity about how things worked, laying the foundation for her future in problem-solving.</p>
+   <p> Supportive Family: Margaret's parents encouraged her academic pursuits, which was significant in an era when girls were not always motivated to study technical subjects.</p>
+    <p>Interest in Teaching: During her high school years, she developed a passion for education and originally considered becoming a math teacher—one of the few respectable career options for women at the time.
+</p>
+<p>Though little is documented about specific hardships in her childhood, her path as a young woman in mid-20th-century America was undoubtedly shaped by societal norms that didn't expect women to enter science or technology fields.
+ 
+</p>
+
+<h2 class="item">Early Career Struggles</h2>
+<p>
+    Margaret Hamilton faced many challenges as a woman in computing and software development—a field dominated by men. Here are some key struggles she encountered:</p>
+<p>A. Balancing Family and Career</p>
+
+   <p> Limited Work Opportunities for Women: After her graduation from Earlham College with a degree in mathematics, she taught high school math for a while. Women of her time were expected to choose family life or traditional roles, making it difficult to pursue careers in technical fields.
+    Margaret often brought her young daughter to the MIT lab, where she worked late hours developing the Apollo flight software. This was unusual in the 1960s, and juggling these responsibilities was not easy, especially without the workplace accommodations that exist today.
+</p>
+<p>B. Career Challenges in a Male-Dominated Field</p>
+
+    <p>Sexism in the Workplace: Women in the field of science and technology during the 1960s were often underestimated or excluded from leadership positions. Margaret had to prove herself repeatedly to gain the respect of her peers and be taken seriously.
+    Coining the Term "Software Engineering"
+    at the time, software development was not recognized as a formal engineering discipline it was often dismissed as “women's work.” Margaret coined the term "software engineering" to highlight the importance and complexity of the work her team was doing and to give the field the professional respect it deserved.
+</p>
+<p>
+    C. Navigating Uncharted Territory in Software Development</p>
+
+   <p>Lack of Precedents and Manuals: Margaret and her team were pioneers, building software without established methods or guides. They had to develop solutions from scratch, often learning through trial and error.
+    Dealing with High-Stakes Pressure: The software for the Apollo missions needed to be flawless—failure could mean losing astronauts' lives and national humiliation. Despite these stakes, Hamilton's work was often underappreciated until the success of the Apollo 11 mission.
+</p>
+<p>
+    D. Overcoming Critical Moments in Apollo 11</p>
+
+<p> During the Apollo 11 moon landing, a computer overload threatened to abort the mission. Thanks to the error-handling code Margaret’s team had developed, the system prioritized critical tasks and enabled the astronauts to land safely. This event proved the importance of her software—but it was an uphill battle to get her efforts recognized before the mission.
+
+
+</p>
+<h2 class="item">Legacy and Triumphs</h2>
+<P>
+    Margaret Hamilton’s legacy lies in her pioneering contributions to software engineering, a field she helped define while ensuring the success of NASA’s Apollo missions. Her work on the flight software for the Command and Lunar Modules was instrumental in safely landing astronauts on the Moon, most notably during Apollo 11. Beyond the technical brilliance of her code—capable of real-time error handling and task prioritization—Hamilton revolutionized the way software was viewed, coining the term "software engineering" and elevating it to a discipline on par with hardware. Her triumphs include not only advancing space exploration but also laying the foundation for modern software development, inspiring generations of engineers, and setting a standard for precision, innovation, and perseverance in one of humanity’s greatest achievements.
+</P>
+</div>
+
+<div class="quote-link">
+    <h2><i class="fa fa-quote-left fa-2x" style="color: #9DC8C8
+;" aria-hidden="true"></i>
+Looking back,we were the luckiest people in the world.There was no choice but to be pioneers;no time be beginners.
+</h2>
+<p>- Margaret Hamilton</p>
+    <p>The lead Apollo flight software designer for NASA's Apollo missons, 1969</p>
+    <div class="separator"></div><hr>
+    <p>Get the detailed account of her life on
+      <a href="https://en.wikipedia.org/wiki/Margaret_Hamilton_(software_engineer)"><span class="bold-link">Wikipedia</span></a>.</p>
+  </div>
+</div>
+<footer>
+    <p>© 2024 dpm. All Rights Reserved.</p>
+    <a href="https://twitter.com/div4version" target="_blank">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="https://github.com/di-in" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
+  </footer>
+  
+
+
+
+
+
+</body>
+</html>
